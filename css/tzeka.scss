@@ -1,0 +1,147 @@
+@import "animations";
+@import "headings";
+@import "flex";
+
+html {
+  background: #000;
+}
+
+body {
+  background: #fff;
+  border-color: #000;
+  border-style: solid;
+  border-width: 5px 0 0;
+  font-family: 'Ledger', serif;
+  font-size: 12px;
+}
+
+a {
+  color: firebrick; 
+  text-decoration: underline;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.content {
+  @include flex(column, space-between, center);
+
+  animation: fade-in 300ms linear;
+  min-height: calc(100vh - 4rem);
+  width: calc(100% - 3rem);
+  margin: 4rem 1.5rem 0 1.5rem;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    margin: 4rem 15rem 0 15rem;
+    min-height: calc(100vh - 8rem);
+    width: calc(100% - 30rem);
+  }
+}
+
+header {
+  @include flex(column);
+}
+
+main {
+  @include flex(column);
+
+  figcaption {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+section {
+  padding: 0 0 4rem;
+
+  @media (min-width: 768px) {
+    padding: 0 0 8rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  figure {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.photos {
+  ul {
+    @include flex(row, space-between, '', wrap);
+  }
+
+  li {
+    flex-basis: calc(100%);
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      flex-basis: calc(50% - 20px);
+      margin-bottom: 40px;
+      transition: all 200ms linear;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      @include flex(row, flex-end, flex-start);
+
+      flex-basis: calc(50% - 40px - 2px);
+    }
+
+    figcaption {
+      text-align: left;
+    }
+  }
+}
+
+.text {
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 0 0 2rem 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+
+  figure {
+    width: 80%;
+    margin: auto;
+
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+footer {
+  align-self: center;
+  padding: 0 0 2rem;
+
+  @media (min-width: 768px) {
+    padding: 0 0 2rem;
+
+    figure {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}

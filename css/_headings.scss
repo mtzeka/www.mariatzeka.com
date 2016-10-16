@@ -1,0 +1,21 @@
+h1, h2, h3 {
+  text-align: center; 
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: .75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
