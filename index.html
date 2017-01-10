@@ -13,41 +13,60 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js" async></script>
 	</head>
 	<body>
+    <div style="position: fixed; top: 0; left: 0; right: 0; background:#000; height: 5px;"></div>
 		<div class="content">
       <header>
-        <section class="text">
-          <h1>Maria Tzeka</h1>
-          <h2>Photography</h2>
-        </section>
+        <h1 class="link text reset-filter">Maria Tzeka</h1>
+        <nav>
+          <ul class="filters">
+            <li class="filter" filter="environment">Environment</li>
+            <li class="filter" filter="portrait">Portraits</li>
+            <li class="filter" filter="color">Color</li>
+            <li class="filter" filter="bw">Black & White</li>
+          </ul>
+          <ul style='margin-top: 2rem;'>
+            <li class="social">
+              <a href="http://instagram.com/_mariatz" target="_blank">instagram</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>
         <section class="photos">
           <ul>
-            <li>
+            <li class="environment color">
               <figure>
                 <img
-                  srcset="images/mobile/95360030.jpg 400w, images/95360030.jpg 800w"
-                  src="images/95360030.jpg"
+                  srcset="images/mobile/23_0022.jpg 400w, images/23_0022.jpg 800w"
+                  src="images/23_0022.jpg"
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment color">
               <figure>
                 <img
-                  srcset="images/mobile/17800030.jpg 400w, images/17800030.jpg 800w"
-                  src="images/17800030.jpg"
+                  srcset="images/mobile/00440031.jpg 400w, images/00440031.jpg 800w"
+                  src="images/00440031.jpg"
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment color">
               <figure>
                 <img
-                  srcset="images/mobile/23720020.jpg 400w, images/23720020.jpg 800w"
-                  src="images/23720020.jpg"
+                  srcset="images/mobile/15_0014.jpg 400w, images/15_0014.jpg 800w"
+                  src="images/15_0014.jpg"
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment bw">
+              <figure>
+                <img
+                  srcset="images/mobile/---_0886.jpg 400w, images/---_0886.jpg 800w"
+                  src="images/---_0886.jpg"
+                />
+              </figure>
+            </li>
+            <li class="environment color">
               <figure>
                 <img
                   srcset="images/mobile/R1-02947-0012.jpg 400w, images/R1-02947-0012.jpg 800w"
@@ -55,7 +74,7 @@
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment color">
               <figure>
                 <img
                   srcset="images/mobile/53510037.jpg 400w, images/53510037.jpg 800w"
@@ -63,7 +82,7 @@
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment color">
               <figure>
                 <img
                   srcset="images/mobile/24270010.jpg 400w, images/24270010.jpg 800w"
@@ -71,7 +90,7 @@
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment bw">
               <figure>
                 <img
                   srcset="images/mobile/00890001.jpg 400w, images/00890001.jpg 800w"
@@ -79,121 +98,91 @@
                 />
               </figure>
             </li>
-            <li>
+            <li class="environment color">
               <figure>
                 <img
-                  srcset="images/mobile/97840013.jpg 400w, images/97840013.jpg 800w"
-                  src="images/97840013.jpg"
+                  srcset="images/mobile/17800030.jpg 400w, images/17800030.jpg 800w"
+                  src="images/17800030.jpg"
                 />
               </figure>
             </li>
-        </section>
-        <section class="photos">
-          <h3>Jason Letkiewicz</h3>
-          <ul>
-            <li>
-              <figure>
-                <img
-                  srcset="images/mobile/47150012.jpg 400w, images/47150012.jpg 800w"
-                  src="images/47150012.jpg"
-                />
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img
-                  srcset="images/mobile/47150022.jpg 400w, images/47150022.jpg 800w"
-                  src="images/47150022.jpg"
-                />
-              </figure>
-            </li>
-            <li>
+
+            <li class="portrait bw">
               <figure>
                 <img
                   srcset="images/mobile/13A_0987.jpg 400w, images/13A_0987.jpg 800w"
                   src="images/13A_0987.jpg"
                 />
+                <figcaption>Jason Letkiewicz</figcaption>
               </figure>
             </li>
-          </ul>
-        </section>
-        <section class="photos">
-          <h3>Beau Wanzer</h3>
-          <ul>
-            <li>
+            <li class="portrait color">
+              <figure>
+                <img
+                  srcset="images/mobile/47150012.jpg 400w, images/47150012.jpg 800w"
+                  src="images/47150012.jpg"
+                />
+                <figcaption>Jason Letkiewicz</figcaption>
+              </figure>
+            </li>
+            <li class="portrait color">
+              <figure>
+                <img
+                  srcset="images/mobile/47150022.jpg 400w, images/47150022.jpg 800w"
+                  src="images/47150022.jpg"
+                />
+                <figcaption>Jason Letkiewicz</figcaption>
+              </figure>
+            </li>
+
+            <li class="portrait bw">
               <figure>
                 <img
                   srcset="images/mobile/001.jpg 400w, images/001.jpg 800w"
                   src="images/001.jpg"
                 />
+                <figcaption>Beau Wanzer</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <img
-                  srcset="images/mobile/R1-01036-016A.jpg 400w, images/R1-01036-016A.jpg 800w"
-                  src="images/R1-01036-016a.jpg"
-                />
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img
-                  srcset="images/mobile/61850024.jpg 400w, images/61850024.jpg 800w"
-                  src="images/61850024.jpg"
-                />
-              </figure>
-            </li>
-            <li>
+            <li class="portrait bw">
               <figure>
                 <img
                   srcset="images/mobile/010.jpg 400w, images/010.jpg 800w"
                   src="images/010.jpg"
                 />
+                <figcaption>Beau Wanzer</figcaption>
               </figure>
             </li>
-          </ul>
-        </section>
-        <section class="photos">
-          <h3>Jim Magas</h3>
-          <ul>
-            <li>
+            <li class="portrait color">
+              <figure>
+                <img
+                  srcset="images/mobile/R1-01036-016A.jpg 400w, images/R1-01036-016A.jpg 800w"
+                  src="images/R1-01036-016a.jpg"
+                />
+                <figcaption>Beau Wanzer</figcaption>
+              </figure>
+            </li>
+
+            <li class="portrait color">
               <figure>
                 <img
                   srcset="images/mobile/00180010.jpg 400w, images/00180010.jpg 800w"
                   src="images/00180010.jpg"
                 />
+                <figcaption>Jim Magas</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <img
-                  srcset="images/mobile/thumb_00210004_1024.jpg 400w, images/thumb_00210004_1024.jpg 800w"
-                  src="images/thumb_00210004_1024.jpg"
-                />
-              </figure>
-            </li>
-            <li>
+            <li class="portrait bw">
               <figure>
                 <img
                   srcset="images/mobile/00410004.jpg 400w, images/00410004.jpg 800w"
                   src="images/00410004.jpg"
                 />
+                <figcaption>Jim Magas</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <img
-                  srcset="images/mobile/00170008.jpg 400w, images/00170008.jpg 800w"
-                  src="images/00170008.jpg"
-                />
-              </figure>
-            </li>
-          </ul>
-        </section>
-        <section class="photos">
-          <ul>
-            <li>
+
+            <li class="portrait color">
               <figure>
                 <img
                   srcset="images/mobile/00230010.jpg 400w, images/00230010.jpg 800w"
@@ -202,13 +191,24 @@
                 <figcaption>Alex Barnett</figcaption>
               </figure>
             </li>
-            <li>
+
+            <li class="portrait bw">
               <figure>
                 <img
                   srcset="images/mobile/00260006.jpg 400w, images/00260006.jpg 800w"
                   src="images/00260006.jpg"
                 />
                 <figcaption>Lori Napoleon</figcaption>
+              </figure>
+            </li>
+
+            <li class="portrait color">
+              <figure>
+                <img
+                  srcset="images/mobile/10256779_792002377523693_3353297368174273149_o.jpg 400w, images/10256779_792002377523693_3353297368174273149_o.jpg 800w"
+                  src="images/10256779_792002377523693_3353297368174273149_o.jpg"
+                />
+                <figcaption>Rebekka Takamizu</figcaption>
               </figure>
             </li>
           </ul>
@@ -227,10 +227,11 @@
             />
           </figure>
         </section>
+        <footer>
+          Website built by Maria Tzeka
+          &copy;
+        </footer>
       </main>
-      <footer>
-        &copy; Maria Tzeka
-      </footer>
 		</div>
     <script src="js/maria.js"></script>
 	</body>
