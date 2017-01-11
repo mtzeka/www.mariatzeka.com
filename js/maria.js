@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       document.querySelectorAll('.photos li').forEach(hideAll);
       document.querySelectorAll('.' + filter).forEach(showAll);
+
+      window.scrollTo(0, 0);
     };
 
     item.addEventListener('click', onItemOnclick);
@@ -33,5 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.reset-filter').addEventListener('click', function () {
     document.querySelectorAll('.filter').forEach(resetSelect);
     document.querySelectorAll('.photos li').forEach(showAll);
+
+    window.scrollTo(0, 0);
   });
 });
