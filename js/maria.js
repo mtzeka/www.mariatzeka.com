@@ -1,5 +1,3 @@
-document.querySelector('footer').innerHTML += new Date().getFullYear();
-
 document.addEventListener('DOMContentLoaded', function () {
   var showAll = function (item) {
     item.classList.remove('hide');
