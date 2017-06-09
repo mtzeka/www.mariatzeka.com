@@ -56,21 +56,23 @@ header {
 
 nav {
   .filters {
-    margin-bottom: 1.2rem;
-
     @media(max-width: 767px) {
       display: none;
     }
   }
 
-  .filter {
-    list-style-type: circle;
-    margin-left: 1.5rem;
-  }
-
   .social {
     @media(min-width: 768px) {
       margin-top: 2rem;
+    }
+  }
+
+  .submenu {
+    margin-bottom: 1.2rem;
+
+    li {
+      list-style-type: circle;
+      margin-left: 1.5rem;
     }
   }
 
@@ -81,15 +83,15 @@ nav {
     @media(min-width: 768px) {
       display: block;
     }
-  }
-
-  li {
-    margin: 1rem 0 0 .2rem;
 
     a {
       color: #000;
       text-decoration: none;
     }
+  }
+
+  li {
+    margin: 1rem 0 0 .2rem;
 
     &.active {
       text-decoration: underline;

@@ -68,17 +68,17 @@ header {
       position: fixed;
       top: 4rem; } }
 
-nav .filters {
-  margin-bottom: 1.2rem; }
-  @media (max-width: 767px) {
-    nav .filters {
-      display: none; } }
-nav .filter {
-  list-style-type: circle;
-  margin-left: 1.5rem; }
+@media (max-width: 767px) {
+  nav .filters {
+    display: none; } }
 @media (min-width: 768px) {
   nav .social {
     margin-top: 2rem; } }
+nav .submenu {
+  margin-bottom: 1.2rem; }
+  nav .submenu li {
+    list-style-type: circle;
+    margin-left: 1.5rem; }
 nav ul {
   display: flex;
   flex-direction: "";
@@ -89,11 +89,11 @@ nav ul {
   @media (min-width: 768px) {
     nav ul {
       display: block; } }
-nav li {
-  margin: 1rem 0 0 .2rem; }
-  nav li a {
+  nav ul a {
     color: #000;
     text-decoration: none; }
+nav li {
+  margin: 1rem 0 0 .2rem; }
   nav li.active {
     text-decoration: underline; }
   nav li.selected {
