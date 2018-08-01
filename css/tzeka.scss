@@ -1,18 +1,23 @@
-@import "animations";
-@import "headings";
-@import "flex";
+---
+---
+
+@import 'animations';
+@import 'flex';
+@import 'headings';
+@import 'header';
+@import 'photos';
 
 html {
-  background: #000;
+  background: #fff;
+  font-size: 12px;
 }
 
 body {
-  background: #fff;
   border-color: #000;
   border-style: solid;
   border-width: 5px 0 0;
   font-family: 'Ledger', serif;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 a {
@@ -25,8 +30,6 @@ a {
 }
 
 .content {
-  @include flex(column, space-between, center);
-
   animation: fade-in 300ms linear;
   min-height: calc(100vh - 4rem);
   width: calc(100% - 3rem);
@@ -38,77 +41,7 @@ a {
   }
 
   @media (min-width: 768px) {
-    align-items: flex-start;
     min-height: calc(100vh - 5rem);
-  }
-}
-
-header {
-  @include flex(column);
-
-  margin-bottom: 3rem;
-
-  @media (min-width: 768px) {
-    position: fixed;
-    top: 4rem;
-  }
-}
-
-nav {
-  .filters {
-    @media(max-width: 767px) {
-      display: none;
-    }
-  }
-
-  .social {
-    @media(min-width: 768px) {
-      margin-top: 2rem;
-    }
-  }
-
-  .submenu {
-    margin-bottom: 1.2rem;
-
-    li {
-      list-style-type: circle;
-      margin-left: 1.5rem;
-    }
-  }
-
-  ul {
-    @include flex();
-    justify-content: space-around;
-
-    @media(min-width: 768px) {
-      display: block;
-    }
-
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-  }
-
-  li {
-    margin: 1rem 0 0 .2rem;
-
-    &.active {
-      text-decoration: underline;
-    }
-
-    &.selected {
-      list-style-type: disc;
-    }
-
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-  }
-
-  @media(max-width: 767px) {
-    text-align: center;
   }
 }
 
@@ -140,43 +73,22 @@ section {
     margin-bottom: 1.5rem;
   }
 
+  ul {
+    @media (min-width: 1024px) {
+      @include flex(row, space-between, '', wrap);
+      flex-wrap: nowrap;
+      margin-bottom: 2rem;
+    }
+  }
+
+  li {
+    margin-right: 2rem;
+  }
+
   figure {
     img {
       width: 100%;
       height: auto;
-    }
-  }
-}
-
-.photos {
-  ul {
-    @include flex(row, space-between, '', wrap);
-  }
-
-  li {
-    flex-basis: calc(100%);
-    margin-bottom: 2rem;
-
-    &.hide {
-      display: none;
-    }
-
-    @media (min-width: 1024px) {
-      flex-basis: calc(50% - 20px);
-      margin-bottom: 40px;
-      transition: all 200ms linear;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .title {
-      @include flex(row, flex-end, flex-start);
-
-      flex-basis: calc(50% - 40px - 2px);
-    }
-
-    figcaption {
-      text-align: left;
     }
   }
 }
@@ -191,7 +103,7 @@ section {
   p {
     font-size: 1rem;
     line-height: 1.6rem;
-    margin: 0;
+    margin: 0 0 1rem;
 
     &:last-child {
       margin: 0;
@@ -223,9 +135,12 @@ section {
 
 footer {
   padding: 0 0 2rem;
+  position: absolute;
+  bottom: 1rem;
 
   @media (min-width: 768px) {
-    padding: 0 0 2rem;
+    padding: 3rem 0 0 .2rem;
+    position: static;
 
     figure {
       width: 50%;

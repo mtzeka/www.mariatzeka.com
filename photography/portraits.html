@@ -1,0 +1,23 @@
+---
+permalink: photography/portraits
+title: portraits
+---
+
+{% include header.html %}
+
+<section class="photos">
+  <ul>
+    {% for img in site.data.photography.portraits %}
+    <li>
+      <figure>
+        <img
+        srcset="/images/mobile/{{img.url}} 400w, /images/{{img.url}} 800w"
+        src="/images/{{img.url}}"
+        />
+      </figure>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% include footer.html %}

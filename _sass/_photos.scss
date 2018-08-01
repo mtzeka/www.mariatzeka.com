@@ -1,0 +1,54 @@
+.photos {
+  ul {
+    @include flex(row, space-between, '', wrap);
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+      position: absolute;
+      left: 0;
+      height: calc(100vh - 120px);
+    }
+  }
+
+  li {
+    flex-basis: calc(100%);
+    margin-bottom: 2rem;
+
+    &.hide {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      flex-basis: calc(50% - 20px);
+      margin-bottom: 40px;
+      margin-left: 30rem;
+
+      &:last-child {
+        margin-right: 5rem;
+      }
+    }
+  }
+
+  figure {
+    @media (min-width: 1024px) {
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      @include flex(row, flex-end, flex-start);
+
+      flex-basis: calc(50% - 40px - 2px);
+    }
+
+    figcaption {
+      text-align: left;
+    }
+  }
+}
