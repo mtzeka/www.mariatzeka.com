@@ -37,3 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo(0, 0);
   });
 });
+
+window.addEventListener("scroll", function () {
+  console.log("SCROLL!!!!");
+});

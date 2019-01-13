@@ -1,0 +1,14 @@
+footer {
+  padding: 0 0 2rem;
+  bottom: 1rem;
+
+  @media (min-width: $tablet-screen) {
+    padding: 3rem 0 0 .2rem;
+    position: static;
+
+    figure {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
