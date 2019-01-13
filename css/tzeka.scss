@@ -1,23 +1,39 @@
 ---
 ---
 
+$desktop-screen: 1024px;
+$tablet-screen: 768px;
+$mobile-screen: 650px;
+
 @import 'animations';
 @import 'flex';
+@import 'nav';
 @import 'headings';
 @import 'header';
 @import 'photos';
+@import 'footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
 
 html {
-  background: #fff;
-  font-size: 12px;
+  background: #000;
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
-  border-color: #000;
-  border-style: solid;
-  border-width: 5px 0 0;
+  background-color: #fff;
+  border-top: 5px solid #000;
   font-family: 'Ledger', serif;
   font-size: 1rem;
+  min-height: calc(100vh - 5px);
 }
 
 a {
@@ -31,16 +47,10 @@ a {
 
 .content {
   animation: fade-in 300ms linear;
-  min-height: calc(100vh - 4rem);
   width: calc(100% - 3rem);
   margin: 4rem 1.5rem 0 1.5rem;
 
-  @media (min-width: 400px) and (max-width: 767px) {
-    width: 70%;
-    margin: 4rem auto 0 auto;
-  }
-
-  @media (min-width: 768px) {
+  @media (min-width: $mobile-screen) {
     min-height: calc(100vh - 5rem);
   }
 }
@@ -53,49 +63,22 @@ main {
     text-align: center;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $mobile-screen) {
     margin: 0 4rem 0 28em;
-  }
-}
-
-section {
-  padding: 0 0 4rem;
-
-  @media (min-width: 768px) {
-    padding: 0 0 8rem;
-  }
-
-  h2 {
-    margin-bottom: 1.5rem;
-  }
-
-  h3 {
-    margin-bottom: 1.5rem;
-  }
-
-  ul {
-    @media (min-width: 1024px) {
-      @include flex(row, space-between, '', wrap);
-      flex-wrap: nowrap;
-      margin-bottom: 2rem;
-    }
-  }
-
-  li {
-    margin-right: 2rem;
-  }
-
-  figure {
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
 }
 
 .link {
   &:hover {
     cursor: pointer;
+  }
+}
+
+section {
+  margin-top: 5.5rem;
+
+  @media(max-width: $mobile-screen) {
+    margin-top: 0;
   }
 }
 
@@ -129,22 +112,6 @@ section {
 
     @media (min-width: 1024px) {
       width: 40%;
-    }
-  }
-}
-
-footer {
-  padding: 0 0 2rem;
-  position: absolute;
-  bottom: 1rem;
-
-  @media (min-width: 768px) {
-    padding: 3rem 0 0 .2rem;
-    position: static;
-
-    figure {
-      width: 50%;
-      margin: auto;
     }
   }
 }

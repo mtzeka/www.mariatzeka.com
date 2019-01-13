@@ -1,0 +1,114 @@
+nav {
+  .root {
+    @media(max-width: $mobile-screen) {
+      height: 7rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media(min-width: $mobile-screen) {
+      display: block;
+    }
+  }
+
+  li {
+    margin: 1rem 0 0 .2rem;
+
+    &.selected {
+      list-style-type: disc;
+    }
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  h2 {
+    .first-level & {
+      font-size: 1.2rem;
+    }
+  }
+
+  .first-level {
+    @media(min-width: $tablet-screen) {
+      margin-bottom: 3rem;
+    }
+
+    @media(max-width: $mobile-screen) {
+      margin: 0;
+    }
+  }
+
+  .second-level {
+    display: block;
+    margin-bottom: 1.4rem;
+    list-style-type: circle;
+
+    li {
+      margin-right: 1.6rem;
+      margin-left: 0;
+      
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    @media(max-width: $mobile-screen) {
+      &.active {
+        display: block;
+        position: absolute;
+      }
+    }
+
+    .active {
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    @media(max-width: $mobile-screen) {
+      display: none;
+      color: #fff;
+      list-style-type: none;
+      text-align: left;
+      left: 0;
+    }
+
+    @media(min-width: $desktop-screen) {
+      margin-right: 0;
+    }
+  }
+
+  .third-level {
+    display: none;
+    color: #888;
+    margin-bottom: 2em;
+    margin-left: 1rem;
+
+    &.active {
+      display: block;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &.active::after {
+          content: "→";
+          margin-left: .5rem;
+        }
+      }
+
+      @media(max-width: $mobile-screen) {
+        display: none;
+      }
+    }
+  }
+}

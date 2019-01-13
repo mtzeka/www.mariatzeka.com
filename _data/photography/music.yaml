@@ -1,41 +1,75 @@
-- url: 47150022.jpg
-  name: Jason Letkiewicz // Alan Hurst
+talsounds:
+  - url: 9912MT000001-R1-017-7.jpg
+    name: TALsounds
 
-- url: 00180010.jpg
-  name: Jim Magas
+steve-hauschildt:
+  - url: SteveHauschildt_Ghostly_01_v2.jpg
+    name: Steve Hauschildt
 
-- url: 01700002.jpg
-  name: Jenny Pulse // Span Moans
+  - url: SteveHauschild_Ghostly_07.jpg
+    name: Steve Hauschildt
 
-- url: 33_0060.jpg
-  name: Jason Letkiewicz // Steve Summers
+jason-letkiewicz:
+  - url: 10173MT000001-R2-E004.jpg
+    name: Jason Letkiewicz
 
-- url: 13A_0987.jpg
-  name: Jason Letkiewicz // Steve Summers
+  - url: 33_0060.jpg
+    name: Jason Letkiewicz
 
-- url: 001.jpg
-  name: Beau Wanzer
+  - url: 13A_0987.jpg
+    name: Jason Letkiewicz
 
-- url: 95350022.jpg
-  name: Chelsea Faith (Cherushii) & Maria Minerva
+midori-takada:
+  - url: IMG_9576.jpg
+    name: Midori Takada
 
-- url: ---_1681.jpg 
-  name: Jamal Moss // Hieroglyphic Being
+  - url: IMG_9575.jpg 
+    name: Midori Takada
 
-- url: 00410004.jpg
-  name: Jim Magas
+  - url: IMG_9592.jpg
+    name: Midori Takada
 
-- url: 010.jpg
-  name: Beau Wanzer
+matchess:
+  - url: Matchess_120mm_1_10.jpg
+    name: Matchess
 
-- url: 00230010.jpg
-  name: Alex Barnett // Champaign Mirrors
+beau-wanzer:
+  - url: 010.jpg
+    name: Beau Wanzer
 
-- url: 95350031.jpg
-  name: Stephanie Neptune // Space Jam
+  - url: 001.jpg
+    name: Beau Wanzer
 
-- url: 00260006.jpg
-  name: Lori Napoleon // Antenes
+hieroglyphic-being:
+  - url: ---_1681.jpg 
+    name: Hieroglyphic Being
 
-- url: 019.jpg
-  name: NGLY
+alex-barnett:
+  - url: AlexBarnett.jpg
+    name: Alex Barnett
+
+  - url: 00230010.jpg
+    name: Alex Barnett
+
+jim-magas:
+  - url: 00180010.jpg
+    name: Jim Magas
+
+  - url: 00410004.jpg
+    name: Jim Magas
+
+antenes:
+  - url: 00260006.jpg
+    name: Antenes
+
+ngly:
+  - url: 019.jpg
+    name: NGLY
+
+cherushii-minerva:
+  - url: 95350022.jpg
+    name: Cherushii & Maria Minerva
+
+willikens-ivkovic:
+  - url: 8690MT000001-R3-066-31A.jpg
+    name: Lena Willikens & Vladimir Ivkovic
